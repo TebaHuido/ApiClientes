@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-&$=jw*37^dv1@atlcq@zlxswoszg=+h-pcq0^7jqgwc$_-2s-w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost','.vercel.app']
+ALLOWED_HOSTS = ['127.0.0.1','localhost','.vercel.app']
 
 
 # Application definition
@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'apiyt',
     'rest_framework',
-    'api'
+    'api',
+    'model_utils'
 ]
 
 MIDDLEWARE = [
@@ -78,14 +79,28 @@ WSGI_APPLICATION = 'apiyt.wsgi.application'
 
 DATABASES = {
     'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'mydatabase', # This is where you put the name of the db file.
+                 # If one doesn't exist, it will be created at migration time.
+    }
+        """
+    'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME':'usersdb',
         'USER':'root',
         'PASSWORD':'nada',
         'HOST':'localhost',
         'PORT':''
-
     }
+    'default': {
+        'ENGINE': 'django.db.backends.oracle',
+        'NAME': 'xe',
+        'USER': 'a_user',
+        'PASSWORD': 'a_password',
+        'HOST': 'dbprod01ned.mycompany.com',
+        'PORT': '1540',
+    }
+        """
 }
 
 
