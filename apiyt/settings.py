@@ -83,24 +83,6 @@ DATABASES = {
         'NAME': 'mydatabase', # This is where you put the name of the db file.
                  # If one doesn't exist, it will be created at migration time.
     }
-        """
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME':'usersdb',
-        'USER':'root',
-        'PASSWORD':'nada',
-        'HOST':'localhost',
-        'PORT':''
-    }
-    'default': {
-        'ENGINE': 'django.db.backends.oracle',
-        'NAME': 'xe',
-        'USER': 'a_user',
-        'PASSWORD': 'a_password',
-        'HOST': 'dbprod01ned.mycompany.com',
-        'PORT': '1540',
-    }
-        """
 }
 
 
