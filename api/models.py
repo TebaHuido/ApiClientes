@@ -14,11 +14,11 @@ class Permission(models.Model):
 
 class Profile(models.Model):
 	pname=models.CharField(max_length=200)
-	permission=models.ManyToManyField(Permission,null=False,  default=permission_default, on_delete=models.SET_DEFAULT)
+	permission=models.ManyToManyField(Permission,null=False,  default=permission_default)
 
 class User(models.Model):
 	uname=models.CharField(max_length=200)
 	password=models.CharField(max_length=200)
 	mail=models.CharField(max_length=200)
 	rut=models.CharField(max_length=11)
-	profile=models.ManyToManyField(Profile , null=False , blank=False, default=profile_default, on_delete=models.SET_DEFAULT)
+	profile=models.ManyToManyField(Profile , null=False , blank=False, default=profile_default)
