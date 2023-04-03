@@ -1,5 +1,94 @@
 {%extends 'base.html' %}
 {% block content %}
+
+   <!-- Parte de arriba -->
+   <header class="py-5 bg-light border-bottom mb-4">
+    <div class="container">
+        <div class="text-center my-5">
+            <h1 class="fw-bolder">Bienvenido NOMBRE DE ALUMNO</h1>
+            <p class="lead mb-0">Accede a los archivos disponibles o sube el tuyo!</p>
+        </div>
+    </div>
+</header>
+<!-- Contenido de la pagina -->
+<div class="container">
+    <div class="row">
+
+        <div class="col-lg-8">
+            
+            <!-- Parte de la Izquierda-->
+            <div class="row">
+                <div class="col-lg-6">
+
+                    <!-- Bloque 1-->
+                    <div class="card mb-4">
+                        <a href="#!"></a>
+                        <div class="card-body">
+                            
+                            <h2 class="card-title h4">Intro al Calculo</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
+                            <a class="btn btn-primary" href="#!">Acceder →</a>
+                        </div>
+                    </div>
+                    <!-- Bkloque 2-->
+                    <div class="card mb-4">
+                        <a href="#!"></a>
+                        <div class="card-body">
+                            
+                            <h2 class="card-title h4">Intro al Algebra</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
+                            <a class="btn btn-primary" href="#!">Acceder →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <!-- Bloque 3-->
+                    <div class="card mb-4">
+                        <a href="#!"></a>
+                        <div class="card-body">
+                            
+                            <h2 class="card-title h4">Calculo 1</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
+                            <a class="btn btn-primary" href="#!">Acceder →</a>
+                        </div>
+                    </div>
+                    <!-- Bkloque 4-->
+                    <div class="card mb-4">
+                        <a href="#!"></a>
+                        <div class="card-body">
+                            
+                            <h2 class="card-title h4">Calculo 2</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
+                            <a class="btn btn-primary" href="#!">Acceder →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Parte de la Derecha -->
+        <div class="col-lg-4">
+            <!-- Categories widget-->
+            <div class="card mb-4">
+                <div class="card-header">Archivos Subidos</div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#!">Apuntes Clase 31/03/2023 Algebra II</a></li>
+                                <li><a href="#!">Correción Prueba 1 de Intro al Calculo</a></li>
+                                <li><a href="#!">Guia de Ejercicios Triangulos Intro al Calculo</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <a class="btn btn-primary" href="#!">Subir Archivo →</a>
+        </div>
+    </div>
+</div>
+
   {% for post in posts %}
     <div class="post">
       <div class="date">

@@ -25,5 +25,11 @@ router.register('usuarios',views.UserViewSet)
 urlpatterns = [
     path('api/v1/',include(router.urls)),
     path('admin/', admin.site.urls),
-    path('', include('api.urls')),
+    path('',views.home,name='home'),
+    path('post/',views.post),
+    path('api/', include('api.urls')),
+    path('acerca/',views.acerca),
+    path('descargar/',views.descargar),
+    path('subir/',views.subir),
+    path('recursos/',views.recursos),
 ]

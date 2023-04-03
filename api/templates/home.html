@@ -1,0 +1,64 @@
+{%extends 'paginabase.html' %}
+{% block content %}
+
+<!-- Contenido de la pagina -->
+<div class="container">
+    <div class="row">
+
+        <div class="col-lg-8">
+            
+            <!-- Parte de la Izquierda-->
+            <div class="row">
+                <div class="col-lg-6">
+
+                    <!-- Bloque 1-->
+                    <div class="card mb-4">
+                        <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                        <div class="card-body">
+                            
+                            <h2 class="card-title h4">Post Title</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <!-- Bkloque 2-->
+                    <div class="card mb-4">
+                        <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                        <div class="card-body">
+                            
+                            <h2 class="card-title h4">Post Title</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Parte de la Derecha -->
+        <div class="col-lg-4">
+            <!--Inicio de Sesion-->
+            <div class="card mb-4">
+                <div class="card-header"></div>
+                <div class="card-body">
+                    <form action="#" method="post">
+                        <div class="form-group row">
+                            <label for="name">Usuario:</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="form-group row">
+                            <label for="email">Contraseña:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary"></button>
+                        <a href="##">iniciar</a>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+{% endblock content %}
